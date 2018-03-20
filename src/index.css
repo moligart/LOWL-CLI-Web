@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+html {
+    background: #ffffff;
+    overflow-y: scroll; 
+}
+
+body {
+    font: 1em/1.6 'Inconsolata', monospace;
+    cursor: default;
+    color: #181818;
+    font-weight: 400;
+    padding: 1em;
+    margin: 1em 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body * {
+    -webkit-animation: fadein .2s ease;
+    -moz-animation: fadein .2s ease;
+    -ms-animation: fadein .2s ease;
+    -o-animation: fadein .2s ease;
+    animation: fadein .2s ease;
+}
+
+@keyframes fadein {
+    from { transform: translateY(3px); } 
+    to { transform: translateY(0px); }
+}
+
+@-moz-keyframes fadein {
+    from { -moz-transform: translateY(3px); } 
+    to { -moz-transform: translateY(0px); }
+}
+
+@-webkit-keyframes fadein {
+    from { -webkit-transform: translateY(3px); } 
+    to { -webkit-transform: translateY(0px); }
+}
+
+@-ms-keyframes fadein {
+    from { -ms-transform: translateY(3px); } 
+    to { -ms-transform: translateY(0px); }
+}
+
+@-o-keyframes fadein {
+    from { -o-transform: translateY(3px); } 
+    to { -o-transform: translateY(0px); }
+}
+
+::selection, 
+::-webkit-selection, 
+::-moz-selection {
+    background: rgb(148, 139, 139);
+}
+
+input[type='text'] {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    background: #ffffff;
+    padding: 0 .5em;
+    width: 50%;
+}
+
+input[type='text']:focus {
+    background: #ffffff;
+    color: #000000;
+    outline: none;
+}
+
+.hide {
+    display: none !important;
+}
