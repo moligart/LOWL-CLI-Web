@@ -23,7 +23,7 @@ class App extends Component {
         this.state = {
             rows: [],
             blockEnter: false,
-            host: 'Lambents-MBP:~ lambentowl$',
+            host: 'LambentOwl:~ $',
             history: [],
             historyIndex: 0,
             inTutorial: false,
