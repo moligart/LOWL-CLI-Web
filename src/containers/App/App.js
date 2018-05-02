@@ -185,9 +185,7 @@ class App extends Component {
         http.init(sid)
             .then((data) => {
                 cookies.setCookie('sid', data.sid);
-            }, (err) => {
-                console.log(err);
-            });
+            }, (err) => {});
     }
 
     run = (cmd) => {
@@ -195,7 +193,6 @@ class App extends Component {
 
         http.runCommand(sid, cmd)
             .then((data) => {
-                console.log(data);
 
                 if (data.type === ROW_TYPES.ROW_TYPE_INPUT) {
                     this.setStateHelper({ host: data.host });
@@ -213,9 +210,7 @@ class App extends Component {
                 }
 
                 this.concatRows(newRows);
-            }, (err) => {
-                console.log(err);
-            })
+            }, (err) => {})
             .then(this.blockEnterKey(false));
     }
 
