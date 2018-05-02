@@ -76,3 +76,10 @@ input[type='text']:focus {
 .hide {
     display: none !important;
 }
+
+.links {
+    position: fixed;
+    right: 5px;
+    top: 2px;
+    font-size: .75em;
+}

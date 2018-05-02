@@ -39,10 +39,10 @@ export default class InputRow extends Component {
                     }}
                     disabled={this.props.row.disabled}
                     defaultValue={this.props.row.body}
-                    autoCapitalize={false}
-                    autoComplete={false}
-                    autoCorrect={false}
-                    spellCheck={false}
+                    autoCapitalize="false"
+                    autoComplete="false"
+                    autoCorrect="false"
+                    spellCheck="false"
                 />
             </div>
         );
